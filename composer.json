@@ -3,8 +3,6 @@
     "name": "sollent/health-check",
     "description": "My test symfony bundle",
     "license": "proprietary",
-    "minimum-stability": "stable",
-    "prefer-stable": true,
     "require": {
         "php": ">=7.2.5",
         "ext-ctype": "*",
