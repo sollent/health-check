@@ -1,6 +1,7 @@
 {
     "type": "symfony-bundle",
     "name": "sollent/health-check",
+    "version": "1.0.0",
     "description": "My test symfony bundle",
     "license": "proprietary",
     "require": {
