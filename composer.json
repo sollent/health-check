@@ -17,13 +17,6 @@
     },
     "require-dev": {
     },
-    "config": {
-        "optimize-autoloader": true,
-        "preferred-install": {
-            "*": "dist"
-        },
-        "sort-packages": true
-    },
     "autoload": {
         "psr-4": {
             "sollent\\HealthCheckBundle\\": "src"
@@ -33,11 +26,6 @@
         "psr-4": {
             "sollent\\HealthCheckBundle\\Tests\\": "tests"
         }
-    },
-    "replace": {
-        "symfony/polyfill-ctype": "*",
-        "symfony/polyfill-iconv": "*",
-        "symfony/polyfill-php72": "*"
     },
     "conflict": {
         "symfony/symfony": "*"
