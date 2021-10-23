@@ -63,6 +63,8 @@ class SendDataCommand extends Command
             $this->io->error('Exception occurred: ' . $exception->getMessage());
             $this->io->text($exception->getTraceAsString());
         }
+
+        return 0;
     }
 
     private function outputInfo(HealthSenderInterface $sender)
