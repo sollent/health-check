@@ -18,13 +18,13 @@ class HealthCheckExtension extends Extension
     public function load(array $configs, ContainerBuilder $container)
     {
         $configuration = new Configuration();
-        $this->processConfiguration($configuration, $configs);
+        $config = $this->processConfiguration($configuration, $configs);
 
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yaml');
 
         $commandDefinition = new Definition(SendDataCommand::class);
-        foreach ($configs['senders'] as $serviceId) {
+        foreach ($config['senders'] as $serviceId) {
             $commandDefinition->addArgument(new Reference($serviceId));
         }
         $commandDefinition->addTag('console.command', ['command' => SendDataCommand::COMMAND_NAME]);
