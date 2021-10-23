@@ -1,3 +1,4 @@
 services:
   sollent\HealthCheckBundle\Controller\HealthController:
     autoconfigure: true
+    autowire: true
